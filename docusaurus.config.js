@@ -1,26 +1,22 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-// https://ricard.dev/how-to-set-docs-as-homepage-for-docusaurus/
-
-
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
-/*@type {import('@docusaurus/types').Config} */
+/** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Karafiat notes',
   tagline: 'make sence in chaos of data',
-  url: 'url',
+  url: 'https://karafiat-notes.netlify.app',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: 'ignore',
+  onBrokenMarkdownLinks: 'ignore',
   favicon: 'img/favicon.ico',
-
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'karafiat', // Usually your GitHub org/user name.
-  projectName: 'notes', // Usually your repo name.
+  organizationName: 'facebook', // Usually your GitHub org/user name.
+  projectName: 'docusaurus', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -32,21 +28,16 @@ const config = {
 
   presets: [
     [
-      /*'classic',*/
-      '@docusaurus/preset-classic',
-      /*@type {import('@docusaurus/preset-classic').Options} */
+      'classic',
+      /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
           routeBasePath: '/',
-          /*sidebarPath: require.resolve('./sidebars.js'),*/
+          sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
         },
-        blog: {
-          // blog: false,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-        },
+        blog: false,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -58,19 +49,13 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Notes on different topics',
+        title: 'My Site',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
         },
-        items: [/*
-          {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Notes',
-          },
-        */],
+        items: [
+        ],
       },
       footer: {
         style: 'dark',
