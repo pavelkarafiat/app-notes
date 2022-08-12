@@ -49,7 +49,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'Karafiat notes',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -59,7 +59,7 @@ const config = {
       },
       footer: {
         style: 'dark',
-        copyright: `Copyright © ${new Date().getFullYear()} Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Built with Docusaurus. Well it is from Facebook like React, but this system is very handy.`,
       },
       prism: {
         theme: lightCodeTheme,
